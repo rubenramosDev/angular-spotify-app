@@ -15,6 +15,8 @@ import { SearchComponent } from './components/search/search.component';
 
 //Routes 
 import { ROUTES } from './app.routes';
+import { NoImagePipe } from './pipes/no-image.pipe';
+import { CardsComponent } from './components/shared/components/cards/cards.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +24,9 @@ import { ROUTES } from './app.routes';
     HomeComponent,
     ArtistComponent,
     NavbarComponent,
-    SearchComponent
+    SearchComponent,
+    NoImagePipe,
+    CardsComponent
   ],
   imports: [
     BrowserModule,

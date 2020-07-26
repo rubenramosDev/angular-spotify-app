@@ -20,10 +20,8 @@ export class HomeComponent {
   fetchingData() {
     this.spotifyService.getNewReleases()
       .subscribe((response: any) => {
-        console.log(response.albums.items);
-        this.newReleases = response.albums.items;
+        this.newReleases = response;
       });
-
-  }
+  } 
 
 }
