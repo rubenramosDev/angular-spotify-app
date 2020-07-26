@@ -15,8 +15,13 @@ import { SearchComponent } from './components/search/search.component';
 
 //Routes 
 import { ROUTES } from './app.routes';
-import { NoImagePipe } from './pipes/no-image.pipe';
 import { CardsComponent } from './components/shared/components/cards/cards.component';
+import { LoadingComponent } from './components/shared/loading/loading.component';
+
+
+//Pipes
+import { NoImagePipe } from './pipes/no-image.pipe';
+import { DomseguroPipe } from './pipes/domseguro.pipe';
 
 @NgModule({
   declarations: [
@@ -26,7 +31,9 @@ import { CardsComponent } from './components/shared/components/cards/cards.compo
     NavbarComponent,
     SearchComponent,
     NoImagePipe,
-    CardsComponent
+    DomseguroPipe,
+    CardsComponent,
+    LoadingComponent
   ],
   imports: [
     BrowserModule,

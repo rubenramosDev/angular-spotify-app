@@ -1,8 +1,12 @@
 <div class="row mb-5">
     <div class="col">
-        <input #searchbyu type="text" (keyup)="search(searchbyu.value)" class="form-control" placeholder="Kayne West, Jay-Z, Willie Nelson, Angele, etc...">
+        <input #searchbyu type="text" (keyup)="search(searchbyu.value)" class="form-control"
+            placeholder="Kayne West, Jay-Z, Willie Nelson, Angele, etc...">
     </div>
 </div>
+<app-loading *ngIf='flag'></app-loading>
 
 
 <app-cards [items]='artists'></app-cards>
+
+
